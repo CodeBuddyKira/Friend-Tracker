@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/action_map"
+        android:icon="@drawable/ic_my_location_black_24dp"
+        android:orderInCategory="1"
+        android:title="@string/show_map"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_nearest"
+        android:icon="@drawable/ic_keyboard_voice_black_24dp"
+        android:orderInCategory="2"
+        android:title="@string/not_enabled"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_signOut"
+        android:orderInCategory="4"
+        android:title="@string/sign_out"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_profile"
+        android:orderInCategory="3"
+        android:icon="@drawable/ic_star_border_black_24dp"
+        android:title="@string/my_profile"
+        app:showAsAction="ifRoom" />
+</menu>

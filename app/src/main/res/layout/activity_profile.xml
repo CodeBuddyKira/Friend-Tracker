@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.example.admin.myproject.profileActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:id="@+id/profilePhoto"
+        android:src="@drawable/placeholder"
+        android:paddingBottom="5dp"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="name"
+        android:id="@+id/profileName"
+        android:layout_below="@+id/profilePhoto"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="email"
+        android:id="@+id/profileEmail"
+        android:layout_below="@+id/profileName"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload/Change Photo"
+        android:background="@color/colorPrimaryDark"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/upload"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="location"
+        android:textStyle="italic"
+        android:id="@+id/profileLocation"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/profileEmail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="00:00"
+        android:textColor="@color/input_register_hint"
+        android:id="@+id/time"
+        android:layout_below="@+id/profileLocation"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

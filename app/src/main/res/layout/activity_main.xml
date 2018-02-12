@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+        android:weightSum="10">
+
+        <com.arlib.floatingsearchview.FloatingSearchView
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:floatingSearch_close_search_on_keyboard_dismiss="false"
+            app:floatingSearch_dimBackground="false"
+            app:floatingSearch_dismissOnOutsideTouch="true"
+            app:floatingSearch_leftActionMode="showSearch"
+            app:floatingSearch_menu="@menu/menu_main"
+            app:floatingSearch_searchBarMarginLeft="0dp"
+            app:floatingSearch_searchBarMarginRight="0dp"
+            app:floatingSearch_searchBarMarginTop="0dp"
+            app:floatingSearch_searchHint="Search..."
+            app:floatingSearch_showSearchKey="true"
+            app:floatingSearch_actionMenuOverflowColor="@color/colorPrimaryDark"
+            app:theme="@style/AppTheme"
+            android:layout_weight="1"
+            app:floatingSearch_suggestionsListAnimDuration="250" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scrollbars="vertical"
+            android:layout_weight="9"/>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MapsActivity">
+
+    <item android:id="@+id/action_location"
+        android:title="@string/loc"
+        android:orderInCategory="1"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_my_location_black_24dp"/>
+    <item android:id="@+id/action_voice_rec"
+        android:title="@string/not_enabled"
+        android:orderInCategory="2"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_keyboard_voice_black_24dp"/>
+    <item android:id="@+id/check_in"
+        android:title="check in"
+        android:orderInCategory="3"
+        app:showAsAction="always"
+        android:icon="@mipmap/ic_launcher"/>
+
+</menu>
